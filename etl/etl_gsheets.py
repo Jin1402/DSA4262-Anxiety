@@ -3,6 +3,18 @@ import pandas as pd
 import os
 from dotenv import load_dotenv
 
+"""
+Runs ETL pipeline to load survey responses and annotated data from Google Sheet.
+
+Setup:
+1. Go to Google Cloud Console.
+2. Create a new project (or select an existing one) and enable the Google Sheets API and Google Drive API.
+3. Navigate to IAM & Admin > Service Accounts, create a service account.
+4. Generate a new JSON key. Download this file and save it in the ./etl folder with the name service_account.json. 
+5. Open the Google Sheet, click "Share," and share it with the email address of the service account you just created (it looks like name@project.iam.gserviceaccount.com).
+6. Add GSHEETS_ID = "<YOUR_GOOGLE_SHEET_ID" to .env. (The ID is in your Google Sheet URL: https://docs.google.com/spreadsheets/d/<THIS_IS_THE_ID>/edit)
+"""
+
 def run_etl():
     print("Starting ETL...")
     
@@ -55,7 +67,6 @@ def run_etl():
 
 def transform_form_responses(df: pd.DataFrame) -> pd.DataFrame:
     df.columns = pd.read_csv('data/survey_qns_data_dict.csv')['Code']
-    print(df.info())
     return df
 
 def transform_labeller(df: pd.DataFrame) -> pd.DataFrame:

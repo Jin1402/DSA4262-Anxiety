@@ -1,0 +1,35 @@
+﻿No.,Category,Question,Code,Options
+1,Timestamp,Timestamp,timestamp,
+2,Consent,"Statement of Consent: By selecting ""I Agree"" below and proceeding to the survey, you acknowledge that:",consent,I agree
+3,Demographics,Gender,demo_gender,Male/Female
+4,Demographics,Area of Study,demo_area_of_study,"Science/Computing and Data/Design & Engineering/Healthcare & Medicine/Arts, Humanities & Social Sciences/Business & Management/Law"
+5,Demographics,Honour's Classification,demo_honours_class,Pass/Honours/Honours (Merit)/Honours (Distinction)/Honours (Highest Distinction)
+6,Demographics,Job-Search Status,demo_job_search_status,Already secured job/Actively applying/Planning to apply soon/Not started
+7,Demographics,Number of Prior Internship(s),demo_num_prior_interns,0/1-2/3 and above
+8,Demographics,How financially urgent is it for you to secure a job?,demo_financial_urgency,1/2/3/4/5
+9,FEAS Personal Ability,I'm worried that my professional knowledge is not as solid as others.,feas_pa1,1/2/3/4/5
+10,FEAS Personal Ability,I'm worried that my language skills are not as outstanding as others.,feas_pa2,1/2/3/4/5
+11,FEAS Personal Ability,I'm worried that my communication skills are not as excellent as others.,feas_pa3,1/2/3/4/5
+12,FEAS Personal Ability,I'm worried that my computer knowledge is not as proficient as others.,feas_pa4,1/2/3/4/5
+13,FEAS Personal Ability,I'm worried that my ability to learn things is not as outstanding as others.,feas_pa5,1/2/3/4/5
+14,FEAS Knowledge Application,I'm worried that the knowledge I acquired in college cannot keep up with the development of the times.,feas_ka1,1/2/3/4/5
+15,FEAS Knowledge Application,I'm worried that the theoretical knowledge I acquired in college cannot solve the problems encountered in my work.,feas_ka2,1/2/3/4/5
+16,FEAS Knowledge Application,I'm worried that the knowledge I acquired in college is not up to date with the latest knowledge (such as programming).,feas_ka3,1/2/3/4/5
+17,FEAS Knowledge Application,I'm worried that the knowledge I acquired in college is too theoretical and cannot adapt to the complex work requirements of today.,feas_ka4,1/2/3/4/5
+18,FEAS Career Replaceability,"I'm worried that my future job will be replaced by artificial intelligence (such as translation, painting, etc.).",feas_cr1,1/2/3/4/5
+19,FEAS Career Replaceability,I'm worried that my future job will be replaced by people with higher education background than me.,feas_cr2,1/2/3/4/5
+20,FEAS Career Replaceability,I'm worried that my future job will be replaced by people who require lower salary and benefits than me.,feas_cr3,1/2/3/4/5
+21,FEAS Career Replaceability,I'm worried that my future job will be replaced by my colleagues.,feas_cr4,1/2/3/4/5
+22,Attention Check,"For this statement, please select ""2"" to demonstrate you are reading the questions closely",ac1,
+23,FEAS Social Relations,"I'm worried that in the future, I won't be able to handle the relationship with my colleagues properly at work.",feas_sr1,1/2/3/4/5
+24,FEAS Social Relations,"I'm worried that in the future, I won't be able to bravely refuse unreasonable overtime arrangements made by my superiors.",feas_sr2,1/2/3/4/5
+25,FEAS Social Relations,"I'm worried that in the future, I won't be able to refuse ineffective team building activities properly.",feas_sr3,1/2/3/4/5
+26,FEAS Social Relations,"I'm worried that in the future, I won't be able to work well with other colleagues to complete a task.",feas_sr4,1/2/3/4/5
+27,Behavioural,Application(s) submitted in the past 4 weeks,bhv_apps_4_wks,0/1 - 5/6 - 15/16 - 30/31+
+28,Behavioural,Interview(s) attended in the past 4 weeks,bhv_itvs_4_wks,0/1/2 - 3/4+
+29,Behavioural,"On average, how many times a day do you check for job updates?",bhv_job_update_check_daily,0/1 - 2/3 - 5/6+
+30,Attention Check,"On average, how many times a week do you commute to the planet Mars for a job interview?",ac2,
+31,Behavioural,"On average, how long do you spend on one application?",bhv_app_duration,<10 min/10 - 30 min/30 - 60 min/1 - 2 h/> 2h/Not Applicable
+32,Behavioural,"On average, how many times a day do you check your application status?",bhv_app_status_check_daily,0/1 - 2/3 - 5/6 +/Not Applicable
+33,Behavioural,"In the last week, how many times did you intend to work on an application but closed the tab because you felt 'not good enough'?",bhv_app_avoidance_weekly,0/1 - 2/3 - 5/6 +
+34,Behavioural,"In the past 2 weeks, describe your experience with job searching. What has been stressful, frustrating, or emotionally challenging? Please write freely and include as much detail as you’re comfortable sharing.",bhv_job_search_exp,

@@ -44,13 +44,13 @@ fig, axes = plt.subplots(2, 2, figsize=(15, 12))
 importances = rf.feature_importances_
 indices = np.argsort(importances)[::-1]
 sns.barplot(x=importances[indices][:10], y=X.columns[indices][:10], ax=axes[0, 0], palette="viridis")
-axes[0, 0].set_title("Top 10 Predictors of Stress")
+axes[0, 0].set_title("Top 10 Predictors of Anxiety")
 
 # Plot 2: Distribution of Scores (Test A: Ceiling/Floor Effects)
 sns.histplot(y, kde=True, bins=20, color='teal', ax=axes[0, 1])
 axes[0, 1].axvline(17, color='red', linestyle='--', label='Min (17)')
 axes[0, 1].axvline(85, color='red', linestyle='--', label='Max (85)')
-axes[0, 1].set_title("Distribution of Actual Stress Scores")
+axes[0, 1].set_title("Distribution of Actual Anxiety Scores")
 axes[0, 1].legend()
 
 # Plot 3: Residual Plot (Test B: Homoscedasticity)
@@ -68,4 +68,5 @@ axes[1, 1].set_xlabel("Actual")
 axes[1, 1].set_ylabel("Predicted")
 
 plt.tight_layout()
+
 plt.show()

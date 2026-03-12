@@ -5,10 +5,10 @@ from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 
 # Load data
-df = pd.read_csv("data/form_responses.csv")
+df = pd.read_excel(r"C:\Users\asus\Downloads\form_responses.xlsx")
 
 # --- Calculate feas_total from survey items ---
-
+'''
 feas_items = [
     "feas_pa1","feas_pa2","feas_pa3","feas_pa4","feas_pa5",
     "feas_ka1","feas_ka2","feas_ka3","feas_ka4",
@@ -23,7 +23,8 @@ df[feas_items] = df[feas_items].apply(pd.to_numeric, errors="coerce")
 df["feas_total"] = df[feas_items].sum(axis=1)
 
 # Drop the original columns
-df = df.drop(columns=feas_items + ["ac1", "ac2"])
+df = df.drop(columns=feas_items + ["ac1", "ac2", "bhv_job_search_exp", "consent", "timestamp"])
+'''
 
 # Target
 y = df["feas_total"]
@@ -84,10 +85,15 @@ X_processed = preprocessor.fit_transform(X)
 
 print(X_processed[:5])
 
-clean_df = pd.DataFrame(X_processed)
+# Get new column names
+feature_names = preprocessor.get_feature_names_out()
 
-# add target back
+# Convert to DataFrame
+clean_df = pd.DataFrame(X_processed, columns=feature_names)
+
+# Add target back
 clean_df["feas_total"] = y.values
 
 # save cleaned dataset
-clean_df.to_csv("data/cleaned_form_responses.csv", index=False)
+#clean_df.to_csv("data/cleaned_form_responses.csv", index=False)
+clean_df.to_csv(r"C:\Users\asus\Downloads\cleaned_form_responses.csv")

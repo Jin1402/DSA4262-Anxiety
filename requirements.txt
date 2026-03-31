@@ -5,3 +5,8 @@ gspread
 python-dotenv
 krippendorff
 statsmodels
+numpy
+matplotlib
+seaborn
+scipy
+wordcloud

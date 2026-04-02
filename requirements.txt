@@ -10,3 +10,11 @@ matplotlib
 seaborn
 scipy
 wordcloud
+torch
+transformers
+datasets
+scikit-learn
+accelerate
+ipywidgets
+lightgbm
+sentence-transformers
